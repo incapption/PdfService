@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bae073a9a89b916fe18b2c73b893bc0d",
+    "content-hash": "8f61488202b404aa48d9a01ad8904c81",
     "packages": [
         {
             "name": "guzzlehttp/guzzle",
@@ -330,6 +330,51 @@
             "time": "2021-10-06T17:43:30+00:00"
         },
         {
+            "name": "incapption/helper",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/incapption/Helper.git",
+                "reference": "eeab96c527a40cb4311e859a95d904d798a724c9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/incapption/Helper/zipball/eeab96c527a40cb4311e859a95d904d798a724c9",
+                "reference": "eeab96c527a40cb4311e859a95d904d798a724c9",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": ">=7.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Incapption\\Helper\\": "src/",
+                    "Incapption\\Helper\\Tests\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "incapption",
+                    "email": "lars.29palms@gmail.com"
+                }
+            ],
+            "description": "PHP helper classes",
+            "support": {
+                "issues": "https://github.com/incapption/Helper/issues",
+                "source": "https://github.com/incapption/Helper/tree/1.0.0"
+            },
+            "time": "2021-11-16T15:17:22+00:00"
+        },
+        {
             "name": "psr/http-client",
             "version": "1.0.1",
             "source": {
@@ -607,7 +652,9 @@
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "php": ">=7.2"
+    },
     "platform-dev": [],
     "plugin-api-version": "2.0.0"
 }
