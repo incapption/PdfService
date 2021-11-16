@@ -1,0 +1,22 @@
+{
+  "name": "incapption/pdf-service",
+  "description": "Helper for the incapption pdf service",
+  "type": "library",
+  "require": {
+    "php": ">=7.2",
+    "guzzlehttp/guzzle": "^7.4"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "incapption",
+      "email": "lars.29palms@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Incapption\\PdfService\\": "src/"
+    }
+  },
+  "minimum-stability": "stable"
+}
