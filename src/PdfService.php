@@ -54,7 +54,7 @@ class PdfService
         $contents = $response->getBody()->getContents();
 		$results = json_decode($contents, true);
 
-		file_put_contents($saveFilePath, $results);
+		file_put_contents($saveFilePath, $results['html']);
 
         return $saveFilePath;
     }
