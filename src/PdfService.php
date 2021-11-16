@@ -14,7 +14,7 @@ class PdfService
      */
     private $hmacSecret;
 
-    private const SERVICE_URL = 'https://pdf.incapption.io/api/v1/print';
+    private const SERVICE_URL = 'https://pdf.incapption.io/api/v1/print/';
 
     public function __construct(string $hmacSecret)
     {
