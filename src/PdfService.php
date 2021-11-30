@@ -110,12 +110,15 @@ class PdfService
      *
      * @param string $filePath The local file path
      * @param bool $unlink Delete the local file after serving it
+     * @param string|null $fileName File name for downloaded file, if empty or null the name of the $filePath will be served
      */
-    public function serveFile(string $filePath, bool $unlink = false)
+    public function serveFile(string $filePath, bool $unlink = false, ?string $fileName = null)
     {
+        $fileName = $fileName ?? basename($filePath);
+
         header('Content-Description: File Transfer');
         header('Content-Type: application/octet-stream');
-        header('Content-Disposition: attachment; filename="'.basename($filePath).'"');
+        header('Content-Disposition: attachment; filename="'.$fileName.'"');
         header('Expires: 0');
         header('Cache-Control: must-revalidate');
         header('Pragma: public');
